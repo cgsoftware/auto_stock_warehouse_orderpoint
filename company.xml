@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+<record model="ir.ui.view" id="view_company_base_orderpoint_form">
+    <field name="name">res.company.base.orderpoint.form</field>
+    <field name="model">res.company</field>
+    <field name="inherit_id" ref="base.view_company_form"/>
+    <field name="arch" type="xml">
+        <notebook position="inside">        
+            <page string="Stock">
+             <separator string="Stock OrderPoint" colspan="4" />	
+                <field name="product_min_qty"/>    
+                <field name="product_max_qty"/>              
+                <field name="warehouse_id"/>  
+                <field name="location_id"/>  
+            </page>
+        </notebook>
+       </field>
+            
+</record>  
+    </data>
+    
+    
+</openerp>
